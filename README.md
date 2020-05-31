@@ -6,7 +6,8 @@ Our app "Being Well" attempts to minimize the health issues during the lockdown 
 Features
 --------
 After entering, app contains 5 options which are as follows:
-	1. Regular Patients:
+	
+        1. Regular Patients:
 		This option is for those who are having health issues apart from the doubt of covid19. A form openes which asks for Name, ID and Cause of Concern. On clicking submit button, a list of hospitals appear from which we can decide the administration to be contacted. On clicking the submit button without any text entered, we have a pop up bar saying "Invalid Entry".
 		
 	2. Text for Covid:
@@ -27,7 +28,8 @@ About
 -----
 The coding was solely done using Pycharm IDE using kivy library. The project consists of 7 files. Among them 3 are python files, 2 are text files, one is image file and one is kivy file.
 The contents are:
-	1. main.py
+	
+        1. main.py
 	2. database.py
 	3. databasen.py
 	4. user.txt
