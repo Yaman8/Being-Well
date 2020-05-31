@@ -1,0 +1,421 @@
+<FirstScreen>:
+    name:"first"
+    FloatLayout:
+        Label:
+            text:"BEING WELL"
+            font_size:40
+            pos_hint: {"x":0.05, "top":1.45}
+        Button:
+            text:"ENTER"
+            background_color: 0,1,0,1
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.35, "top":0.5}
+            on_press:
+                root.sec()
+                root.manager.transition.direction = "left"
+
+<SecondScreen>:
+    name: "second"
+    FloatLayout:
+        Label:
+            text:"SELECT:"
+            font_size:40
+            pos_hint: {"x":0.05, "top":1.45}
+        Button:
+            text:"REGULAR PATIENTS"
+            background_color: 1,0.6,0.2,1
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.35, "top":0.8}
+            on_press:
+                root.medi()
+                root.manager.transition.direction = "left"
+
+        Button:
+            text:"TEST FOR COVID"
+            size_hint: 0.4, 0.1
+            background_color: 1,0.6,0.2,1
+            pos_hint: {"x":0.35, "top":0.65}
+            on_press:
+                root.test()
+                root.manager.transition.direction = "left"
+
+        Button:
+            text:"COMMUNITY HEALTH"
+            size_hint: 0.4, 0.1
+            background_color: 1,0.6,0.2,1
+            pos_hint: {"x":0.35, "top":0.5}
+            on_press:
+                root.health()
+                root.manager.transition.direction = "left"
+
+
+        Button:
+            text:"UPDATE PROFILE"
+            size_hint: 0.4, 0.1
+            background_color: 1,0.6,0.2,1
+            pos_hint: {"x":0.35, "top":0.35}
+            on_press:
+
+
+        Button:
+            text:"MY TICKETS"
+            size_hint: 0.4, 0.1
+            background_color: 1,0.6,0.2,1
+            pos_hint: {"x":0.35, "top":0.20}
+            on_press:
+                root.ppop()
+
+<MediScreen>:
+    namee: namee
+    ref: ref
+    cause: cause
+    name:"medi"
+    FloatLayout:
+        cols: 1
+        Label:
+            text:"Enter your info"
+            font_size:40
+            pos_hint: {"x":0.05, "top":1.45}
+            FloatLayout:
+                cols:2
+                Label:
+                    text:"Name:"
+                    font_size:28
+                    pos_hint: {"x":0.8, "top":5}
+
+                TextInput:
+                    pos_hint: {"x":3, "top":4.78}
+                    size_hint: 4,0.5
+                    font_size:28
+                    id: namee
+                    multiline: False
+
+                Label:
+                    text:"ID:"
+                    font_size:28
+                    pos_hint: {"x":0.8, "top":4.15}
+
+                TextInput:
+                    pos_hint: {"x":3, "top":3.95}
+                    size_hint: 4,0.5
+                    font_size:28
+                    id: ref
+                    multiline: False
+
+                Label:
+                    text:"Cause:"
+                    font_size:28
+                    pos_hint: {"x":0.8, "top":3.25}
+
+                TextInput:
+                    pos_hint: {"x":3, "top":3}
+                    size_hint: 4,0.5
+                    font_size:28
+                    id: cause
+                    multiline: False
+        Button:
+            text:"SUBMIT"
+            size_hint: 0.4, 0.1
+            background_color: 0,1,0,1
+            pos_hint: {"x":0.35, "top":0.2}
+            on_press:
+                root.submit()
+
+
+<HospScreen>:
+    name: "hosp"
+    FloatLayout:
+        Button:
+            text:"Contact Araniko Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.1, "top":0.9}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact Ayurved Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.5, "top":0.9}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact B&B Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.1, "top":0.8}
+            on_press:
+                root.submit()
+
+
+        Button:
+            text:"Contact Bhaktapur Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.5, "top":0.8}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact Bir Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.1, "top":0.7}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact Kantipur Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.5, "top":0.7}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact Kanti Bal Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.1, "top":0.6}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact Kathmandu Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.5, "top":0.6}
+            on_press:
+                root.submit()
+
+
+        Button:
+            text:"Contact KIST Medical"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.1, "top":0.5}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact Maternity Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.5, "top":0.5}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact National TB Center"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.1, "top":0.4}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact Patan Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.5, "top":0.4}
+            on_press:
+                root.submit()
+
+
+        Button:
+            text:"Contact Teku Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.1, "top":0.3}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact Shankarpur Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.5, "top":0.3}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"EXIT"
+            size_hint: 0.4, 0.1
+            background_color: 1,0,0,1
+            pos_hint: {"x":0.3, "top":0.15}
+            on_press:
+                root.exit()
+
+
+<HealthScreen>:
+    name:"health"
+    FloatLayout:
+        Button:
+            text:"Contact Sandesh Paudel"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.3, "top":0.9}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact Yaman Subedi"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.3, "top":0.8}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact Bipana KC"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.3, "top":0.7}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact Abhinaya Chhetri"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.3, "top":0.6}
+            on_press:
+                root.submit()
+
+
+        Button:
+            text:"Contact Aakash Subedi"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.3, "top":0.5}
+            on_press:
+                root.submit()
+
+
+        Button:
+            text:"Contact Saugat Paudel"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.3, "top":0.4}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"EXIT"
+            size_hint: 0.4, 0.1
+            background_color: 1,0,0,1
+            pos_hint: {"x":0.3, "top":0.2}
+            on_press:
+                root.exit()
+
+
+<CovidScreen>:
+    name: "covid"
+    FloatLayout:
+        Button:
+            text:"Contact Patan Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.3, "top":0.9}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact Teku Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.3, "top":0.8}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact Kathmandu Medical College"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.3, "top":0.7}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"Contact Kathmandu Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.3, "top":0.6}
+            on_press:
+                root.submit()
+
+
+        Button:
+            text:"Contact Kantipur hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.3, "top":0.5}
+            on_press:
+                root.submit()
+
+
+        Button:
+            text:"Contact Teaching Hospital"
+            size_hint: 0.4, 0.1
+            pos_hint: {"x":0.3, "top":0.4}
+            on_press:
+                root.submit()
+
+        Button:
+            text:"EXIT"
+            size_hint: 0.4, 0.1
+            background_color: 1,0,0,1
+            pos_hint: {"x":0.3, "top":0.2}
+            on_press:
+                root.exit()
+
+
+
+
+<TestScreen>:
+    namee: namee
+    ref: ref
+    cause: cause
+    add: add
+    name: "test"
+    FloatLayout:
+        cols: 1
+        Label:
+            text:"Enter your info"
+            font_size:40
+            pos_hint: {"x":0.05, "top":1.45}
+            FloatLayout:
+                cols:2
+                Label:
+                    text:"Name:"
+                    font_size:28
+                    pos_hint: {"x":0.8, "top":5}
+
+                TextInput:
+                    pos_hint: {"x":3, "top":4.78}
+                    size_hint: 4,0.5
+                    font_size:28
+                    id: namee
+                    multiline: False
+
+                Label:
+                    text:"ID:"
+                    font_size:28
+                    pos_hint: {"x":0.8, "top":4.15}
+
+                TextInput:
+                    pos_hint: {"x":3, "top":3.95}
+                    size_hint: 4,0.5
+                    font_size:28
+                    id: ref
+                    multiline: False
+
+                Label:
+                    text:"Cause:"
+                    font_size:28
+                    pos_hint: {"x":0.8, "top":3.25}
+
+                TextInput:
+                    pos_hint: {"x":3, "top":3}
+                    size_hint: 4,0.5
+                    font_size:28
+                    id: cause
+                    multiline: False
+
+                Label:
+                    text:"Address:"
+                    font_size:28
+                    pos_hint: {"x":0.8, "top":2.4}
+
+                TextInput:
+                    pos_hint: {"x":3, "top":2.15}
+                    size_hint: 4,0.5
+                    font_size:28
+                    id: add
+                    multiline: False
+        Button:
+            text:"SUBMIT TEST"
+            size_hint: 0.4, 0.1
+            background_color: 0,1,0,1
+            pos_hint: {"x":0.35, "top":0.2}
+            on_press:
+                root.submit()
+
+

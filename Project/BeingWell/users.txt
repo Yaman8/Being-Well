@@ -1,0 +1,3 @@
+Yaman;1;Fever;2020-05-31
+Sandesh;344;Fever;2020-05-31
+Saugat;345;Fever;2020-05-31
